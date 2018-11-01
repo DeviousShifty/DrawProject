@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class ViewController: UIViewController
+public class DrawingViewController: UIViewController
 {
 
     public override func viewDidLoad()-> Void
