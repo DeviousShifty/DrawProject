@@ -33,17 +33,13 @@ public class ArtCollectioonViewControllerCollectionViewController: UICollectionV
     private let labels : [String] =
     {
         return [
-        "This",
-        "needs",
-        "to",
-        "be",
-        "one",
-        "to",
-        "one",
-        "with",
-        "creativeCS",
-        "above",
-       
+        "EthanMumfordEC",
+        "EthanMumfordSW",
+        "EthanMumfordMF",
+        "panigale",
+        "snowymountain",
+        "widowmaker",
+        "EthanMumfordOcto",
         ]
         
         
