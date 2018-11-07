@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		991949372193386D003342FF /* ArtCollectioonViewControllerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991949362193386D003342FF /* ArtCollectioonViewControllerCollectionViewController.swift */; };
+		9919493A21934AD3003342FF /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919493921934AD3003342FF /* ArtCell.swift */; };
 		99C956AE218B3C7B00791634 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C956AD218B3C7B00791634 /* AppDelegate.swift */; };
 		99C956B0218B3C7B00791634 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C956AF218B3C7B00791634 /* DrawingViewController.swift */; };
 		99C956B3218B3C7B00791634 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99C956B1218B3C7B00791634 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		991949362193386D003342FF /* ArtCollectioonViewControllerCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCollectioonViewControllerCollectionViewController.swift; sourceTree = "<group>"; };
+		9919493921934AD3003342FF /* ArtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
 		99C956AA218B3C7B00791634 /* DrawingProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C956AD218B3C7B00791634 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99C956AF218B3C7B00791634 /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 			children = (
 				99C956B1218B3C7B00791634 /* Main.storyboard */,
 				99C956B6218B3C7D00791634 /* LaunchScreen.storyboard */,
+				9919493921934AD3003342FF /* ArtCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				991949372193386D003342FF /* ArtCollectioonViewControllerCollectionViewController.swift in Sources */,
 				99C956B0218B3C7B00791634 /* DrawingViewController.swift in Sources */,
 				99C956AE218B3C7B00791634 /* AppDelegate.swift in Sources */,
+				9919493A21934AD3003342FF /* ArtCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
