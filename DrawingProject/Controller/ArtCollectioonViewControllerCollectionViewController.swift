@@ -5,17 +5,58 @@
 //  Created by Mumford, Ethan on 11/7/18.
 //  Copyright © 2018 CTEC. All rights reserved.
 //
-
+// SENDER IS THE OBJECT THAT CALLS THE ACTION
 import UIKit
 
 private let reuseIdentifier = "artIdentifier"
 
 public class ArtCollectioonViewControllerCollectionViewController: UICollectionViewController
 {
-
-   public override func viewDidLoad()
+    //MARK: Data members for Creativity Screen
+    
+    private let sectionInserts = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
+    private let itemsPerRowCompact : CGFloat = 4
+    private let itemsPerRowNormal : CGFloat = 6
+    
+    private let creativeCS : [UIImage?] =
+    {
+        return [
+            UIImage(named: "EthanMumfordEC"),
+            UIImage(named: "EthanMumfordSW"),
+            UIImage(named: "EthanMumfordMF"),
+            UIImage(named: "panigale"),
+            UIImage(named: "snowymountain"),
+            UIImage(named: "widowmaker"),
+            UIImage(named: "EthanMumfordOcto"),
+            ]
+    }()
+    private let labels : [String] =
+    {
+        return [
+        "This",
+        "needs",
+        "to",
+        "be",
+        "one",
+        "to",
+        "one",
+        "with",
+        "creativeCS",
+        "above",
+       
+        ]
+        
+        
+    }()
+    
+    
+    
+    
+    
+    
+   public override func viewDidLoad() -> Void
    {
-        super.viewDidLoad()
+        super.viewDidLoad() //super. means go and do the parent function, then do the rest of the peasants
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
