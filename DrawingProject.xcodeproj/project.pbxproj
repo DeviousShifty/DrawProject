@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		991949372193386D003342FF /* ArtCollectioonViewControllerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991949362193386D003342FF /* ArtCollectioonViewControllerCollectionViewController.swift */; };
 		99C956AE218B3C7B00791634 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C956AD218B3C7B00791634 /* AppDelegate.swift */; };
 		99C956B0218B3C7B00791634 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C956AF218B3C7B00791634 /* DrawingViewController.swift */; };
 		99C956B3218B3C7B00791634 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99C956B1218B3C7B00791634 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		991949362193386D003342FF /* ArtCollectioonViewControllerCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCollectioonViewControllerCollectionViewController.swift; sourceTree = "<group>"; };
 		99C956AA218B3C7B00791634 /* DrawingProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C956AD218B3C7B00791634 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99C956AF218B3C7B00791634 /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9919493421933812003342FF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				99C956AF218B3C7B00791634 /* DrawingViewController.swift */,
+				991949362193386D003342FF /* ArtCollectioonViewControllerCollectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		991949352193382D003342FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				99C956B1218B3C7B00791634 /* Main.storyboard */,
+				99C956B6218B3C7D00791634 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		991949382193387E003342FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				99C956B9218B3C7D00791634 /* Info.plist */,
+				99C956AD218B3C7B00791634 /* AppDelegate.swift */,
+				99C956B4218B3C7D00791634 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		99C956A1218B3C7B00791634 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +84,9 @@
 		99C956AC218B3C7B00791634 /* DrawingProject */ = {
 			isa = PBXGroup;
 			children = (
-				99C956AD218B3C7B00791634 /* AppDelegate.swift */,
-				99C956AF218B3C7B00791634 /* DrawingViewController.swift */,
-				99C956B1218B3C7B00791634 /* Main.storyboard */,
-				99C956B4218B3C7D00791634 /* Assets.xcassets */,
-				99C956B6218B3C7D00791634 /* LaunchScreen.storyboard */,
-				99C956B9218B3C7D00791634 /* Info.plist */,
+				9919493421933812003342FF /* Controller */,
+				991949352193382D003342FF /* View */,
+				991949382193387E003342FF /* Resources */,
 			);
 			path = DrawingProject;
 			sourceTree = "<group>";
@@ -135,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				991949372193386D003342FF /* ArtCollectioonViewControllerCollectionViewController.swift in Sources */,
 				99C956B0218B3C7B00791634 /* DrawingViewController.swift in Sources */,
 				99C956AE218B3C7B00791634 /* AppDelegate.swift in Sources */,
 			);
@@ -281,7 +309,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DrawingProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DrawingProject/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +326,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DrawingProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DrawingProject/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
