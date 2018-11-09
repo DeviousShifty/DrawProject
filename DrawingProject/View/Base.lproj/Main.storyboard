@@ -82,6 +82,9 @@
                                     <constraint firstItem="n1k-Rp-ULv" firstAttribute="centerY" secondItem="fgO-43-dGY" secondAttribute="centerY" id="hrR-zl-Aye"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="n1k-Rp-ULv" secondAttribute="trailing" id="i9q-wD-XnS"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="artImage" destination="n1k-Rp-ULv" id="aoz-F1-DfY"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                     </collectionView>
