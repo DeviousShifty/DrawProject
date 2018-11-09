@@ -56,7 +56,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Reuse Identifier" id="fgO-43-dGY" userLabel="artIdentifier" customClass="ArtCell" customModule="DrawingProject" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="artidentifier" id="fgO-43-dGY" userLabel="artIdentifier" customClass="ArtCell" customModule="DrawingProject" customModuleProvider="target">
                                 <rect key="frame" x="87.5" y="0.0" width="200" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -78,12 +78,14 @@
                                 <constraints>
                                     <constraint firstItem="n1k-Rp-ULv" firstAttribute="leading" secondItem="fgO-43-dGY" secondAttribute="leadingMargin" id="1bC-Fz-CZs"/>
                                     <constraint firstItem="n1k-Rp-ULv" firstAttribute="top" secondItem="fgO-43-dGY" secondAttribute="topMargin" id="8bR-cZ-xxL"/>
+                                    <constraint firstItem="ADr-Yj-upa" firstAttribute="width" secondItem="n1k-Rp-ULv" secondAttribute="width" id="HgD-z2-qfU"/>
                                     <constraint firstItem="n1k-Rp-ULv" firstAttribute="centerY" secondItem="ADr-Yj-upa" secondAttribute="centerY" id="bjf-yZ-40m"/>
                                     <constraint firstItem="n1k-Rp-ULv" firstAttribute="centerY" secondItem="fgO-43-dGY" secondAttribute="centerY" id="hrR-zl-Aye"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="n1k-Rp-ULv" secondAttribute="trailing" id="i9q-wD-XnS"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="artImage" destination="n1k-Rp-ULv" id="aoz-F1-DfY"/>
+                                    <outlet property="artLabel" destination="n1k-Rp-ULv" id="4X5-KD-JaM"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
