@@ -8,6 +8,8 @@
 // SENDER IS THE OBJECT THAT CALLS THE ACTION
 import UIKit
 
+
+
 private let reuseIdentifier = "artIdentifier"
 
 public class ArtCollectioonViewControllerCollectionViewController: UICollectionViewController
@@ -62,10 +64,6 @@ public class ArtCollectioonViewControllerCollectionViewController: UICollectionV
         // Do any additional setup after loading the view.
     }
 
-  public override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
     /*
     // MARK: - Navigation
@@ -94,7 +92,7 @@ public class ArtCollectioonViewControllerCollectionViewController: UICollectionV
     {
         let artCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ArtCell //! after variable force wraps
         artCell.backgroundColor = .purple
-        artCell.artImage.image = creativeCS[indexPath.row]
+        artCell.artImage.image = creativeCS[indexPath.row] //.row is like using .get  as! makes it from boring type to my type (converter).
         artCell.artLabel.text = labels[indexPath.row]
     
         // Configure the cell
