@@ -29,7 +29,7 @@ public class ArtCollectioonViewControllerCollectionViewController: UICollectionV
             UIImage(named: "panigale"),
             UIImage(named: "snowymountain"),
             UIImage(named: "widowmaker"),
-            UIImage(named: "EthanMumfordOcto"),
+            UIImage(named: "EthanMumfordOcto")
             ]
     }()
     private let labels : [String] =
@@ -41,7 +41,7 @@ public class ArtCollectioonViewControllerCollectionViewController: UICollectionV
         "panigale",
         "snowymountain",
         "widowmaker",
-        "EthanMumfordOcto",
+        "EthanMumfordOcto"
         ]
         
     }()
@@ -59,7 +59,7 @@ public class ArtCollectioonViewControllerCollectionViewController: UICollectionV
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+    
 
         // Do any additional setup after loading the view.
     }
@@ -112,12 +112,8 @@ public class ArtCollectioonViewControllerCollectionViewController: UICollectionV
         
         return CGSize(width: widthPerItem, height: widthPerItem)
     }
-    public func collectionView(_collectionView: UICollectionView,
-                               layout collectionViewLayout: UICollectionViewLayout,
-                               insetForSectionAt section: Int) -> UIEdgeInsets
-    {
-        return sectionInserts
-    }
+    
+    
     
     public func collectionView(_collectionView: UICollectionView,
                                layout collectionViewLayout: UICollectionViewLayout,
@@ -125,6 +121,36 @@ public class ArtCollectioonViewControllerCollectionViewController: UICollectionV
     {
         return sectionInserts.left
     }
+    public override func collectionView(_ _collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath)
+    {
+        let imageView = UIImageView(image: creativeCS[indexPath.row])
+        imageView.frame = self.view.frame
+        imageView.backgroundColor = .black
+        imageView.contentMode = .scaleAspectFit
+        imageView.isUserInteractionEnabled = true
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissFullscreenImage))
+        imageView.addGestureRecognizer(tap)
+        
+        self.view.addSubview(imageView)
+    }
+    
+    //use to go back from full mode
+    @objc
+    private func dismissFullscreenImage(_sender: UITapGestureRecognizer)
+    {
+        _sender.view?.removeFromSuperview()
+    }
+
+    
+    public func collectionView(_collectionView: UICollectionView,
+                               layout collectionViewLayout: UICollectionViewLayout,
+                               insetForSectionAt section: Int) -> UIEdgeInsets
+    
+    {
+        return sectionInserts
+    }
+    
     
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking
